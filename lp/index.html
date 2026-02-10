@@ -1,97 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesa 4X — Imersão</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mesa 4X — Evento</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="hero">
+<!-- HEADER -->
+<header class="header">
   <div class="container">
-    <h1>Seu marketing não precisa ser um tiro no escuro</h1>
-    <p>Em 2 dias você sai com um plano executável de demanda e conversão.</p>
-
-    <a href="#" class="btn">Quero garantir minha vaga</a>
-
-    <img src="https://via.placeholder.com/500x300"
-         alt="Ilustração da imersão Mesa 4X">
+    <div class="logo">Mesa 4X</div>
   </div>
 </header>
 
-<main>
 
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+      <h1>Seu marketing não precisa ser um tiro no escuro.</h1>
+
+      <p class="subheadline">
+        Em 2 dias você sai com um plano executável de demanda e conversão
+      </p>
+
+      <a href="#planos" class="btn btn-primary">
+        Garantir vaga
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- COMO FUNCIONA -->
 <section class="steps">
   <div class="container">
+
     <h2>Como funciona</h2>
 
-    <div class="grid-3">
+    <div class="steps-grid">
 
-      <article class="step">
-        <span class="icon">🔍</span>
+      <article class="step-card">
+        <div class="icon">📊</div>
         <h3>Diagnóstico</h3>
-        <p>Análise de oferta, canal e posicionamento.</p>
+        <p>
+          Análise do seu cenário atual e definição de metas claras.
+        </p>
       </article>
 
-      <article class="step">
-        <span class="icon">⚙️</span>
+      <article class="step-card">
+        <div class="icon">🧠</div>
+        <h3>Estratégia</h3>
+        <p>
+          Construção do plano de crescimento baseado em dados.
+        </p>
+      </article>
+
+      <article class="step-card">
+        <div class="icon">🚀</div>
         <h3>Execução</h3>
-        <p>Frameworks práticos aplicáveis.</p>
-      </article>
-
-      <article class="step">
-        <span class="icon">📈</span>
-        <h3>Escala</h3>
-        <p>Métricas e otimização contínua.</p>
+        <p>
+          Aplicação prática com acompanhamento.
+        </p>
       </article>
 
     </div>
+
   </div>
 </section>
 
-<section class="pricing">
+
+<!-- PLANOS -->
+<section class="plans" id="planos">
   <div class="container">
-    <h2>Planos</h2>
 
-    <div class="grid-3">
+    <h2>Escolha seu ingresso</h2>
 
-      <article class="card">
+    <div class="plans-grid">
+
+      <!-- CARD -->
+      <article class="plan-card">
         <h3>Classic</h3>
-        <p class="price">R$ 997</p>
+        <p class="price">R$ 297</p>
         <ul>
-          <li>Imersão completa</li>
-          <li>Material</li>
+          <li>Acesso ao evento</li>
+          <li>Material digital</li>
+          <li>Certificado</li>
         </ul>
-        <a href="#" class="btn">Comprar</a>
+
+        <a href="#" class="btn btn-outline">
+          Comprar
+        </a>
       </article>
 
-      <article class="card highlight">
+
+      <!-- CARD DESTACADO -->
+      <article class="plan-card featured" aria-label="Plano recomendado">
+        <span class="badge">Recomendado</span>
+
         <h3>VIP</h3>
-        <p class="price">R$ 1.997</p>
+        <p class="price">R$ 597</p>
         <ul>
           <li>Tudo do Classic</li>
-          <li>Mentoria</li>
+          <li>Mentoria em grupo</li>
+          <li>Networking fechado</li>
         </ul>
-        <a href="#" class="btn">Comprar</a>
+
+        <a href="#" class="btn btn-primary">
+          Comprar VIP
+        </a>
       </article>
 
-      <article class="card">
+
+      <!-- CARD -->
+      <article class="plan-card">
         <h3>Camarote</h3>
-        <p class="price">R$ 3.997</p>
+        <p class="price">R$ 997</p>
         <ul>
           <li>Tudo do VIP</li>
-          <li>Suporte direto</li>
+          <li>Mentoria 1:1</li>
+          <li>Acesso prioritário</li>
         </ul>
-        <a href="#" class="btn">Comprar</a>
+
+        <a href="#" class="btn btn-outline">
+          Comprar
+        </a>
       </article>
 
     </div>
+
   </div>
 </section>
 
+
 </main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>Projeto de teste Front-End — V4 Company</p>
+  </div>
+</footer>
 
 </body>
 </html>
